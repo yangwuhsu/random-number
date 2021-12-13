@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var str = "產出亂數"
+
+        // var getRadomFunction = function (total, maxNumber) {
+        //     function getRadom(max) {
+        //         return Math.floor(Math.random() * maxNumber)
+        //     }
+        // }
+        // // console.log('getRadomFunction', getRadomFunction)
+        // // for (var i = 1; i <= total; i++) {
+        // //     if (i <= total - 1) {
+        // //         str = str + getRadom(max) + ","
+        // //     } else {
+        // //         str = str + getRadom(max)
+        // //     }
+        // // }
+
+        // getRadomFunction(10, 100)
+        // document.write(str)
+
+        function getRanDomNum(maxNumber) {
+            return Math.floor(Math.random() * maxNumber)
+        }
+
+        function printNum(total, max) {
+            let randomNum;
+            for (let i = 1; i <= total; i++) {
+                randomNum = getRanDomNum(max)
+                console.log('randomNum', randomNum);
+            }
+        }
+
+        printNum(10, 100)
+
+
+    </script>
+</body>
+
+</html>
